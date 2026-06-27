@@ -30,4 +30,4 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy dist/ --project-name=me ${{ github.ref == 'refs/heads/main' && '' || '--branch=preview' }}
+          command: pages deploy dist/ --project-name=meishi ${{ github.ref == 'refs/heads/main' && '' || '--branch=preview' }}
