@@ -1,0 +1,39 @@
+{
+  "name": "me",
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "generate-types": "wrangler types",
+    "prepare": "husky",
+    "lint": "oxlint .",
+    "format": "oxfmt --write .",
+    "check": "oxlint . && astro check"
+  },
+  "dependencies": {
+    "@astrojs/cloudflare": "^14.0.1",
+    "@astrojs/mdx": "^7.0.0",
+    "@astrojs/rss": "^4.0.18",
+    "@astrojs/sitemap": "^3.7.3",
+    "@tailwindcss/vite": "^4.3.1",
+    "astro": "^7.0.3",
+    "sharp": "^0.34.3",
+    "tailwindcss": "^4.3.1",
+    "wrangler": "^4.105.0"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^17.0.8",
+    "oxfmt": "^0.56.0",
+    "oxlint": "^1.71.0"
+  },
+  "lint-staged": {
+    "*.{js,ts,mjs,cjs}": ["oxlint", "oxfmt --write"]
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}
